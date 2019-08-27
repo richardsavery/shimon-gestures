@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -2526.0, -281.0, 1179.0, 1327.0 ],
+		"rect" : [ 60.0, 107.0, 730.0, 549.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,123 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 762.0, 628.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 625.0, 628.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 625.0, 670.5, 46.0, 22.0 ],
+					"text" : "rjs_evil"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 307.0, 505.0, 150.0, 74.0 ],
+					"text" : "Simple example: Press the left bang to move in one direction, and the other bang to move in the other direction "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 598.0, 482.0, 150.0, 20.0 ],
+					"text" : "VIPs edit here and below "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 433.0, 628.0, 29.5, 22.0 ],
+					"text" : "1 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 433.0, 589.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 331.0, 628.0, 29.5, 22.0 ],
+					"text" : "-1 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 345.0, 684.0, 104.0, 22.0 ],
+					"text" : "s rjs.basepan -1 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 294.0, 589.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-65",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -49,13 +166,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 56.0, 107.0, 322.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -82,7 +199,32 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 36.75, 253.0, 49.0, 22.0 ],
+									"text" : "start $1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 13.0, 167.0, 41.0, 22.0 ],
+									"text" : "set $1"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "newobj",
@@ -102,7 +244,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 52.5, 142.0, 24.0, 24.0 ]
+									"patching_rect" : [ 80.0, 140.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -152,8 +294,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 52.5, 175.0, 52.0, 23.0 ],
-									"text" : "start $1"
+									"patching_rect" : [ 46.5, 207.0, 29.5, 23.0 ],
+									"text" : "0"
 								}
 
 							}
@@ -176,7 +318,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 95.0, 218.0, 47.5, 22.0 ],
+									"patching_rect" : [ 102.5, 253.0, 47.5, 22.0 ],
 									"text" : "stop"
 								}
 
@@ -188,7 +330,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "bang" ],
-									"patching_rect" : [ 52.5, 253.0, 79.0, 22.0 ],
+									"patching_rect" : [ 52.5, 332.0, 79.0, 22.0 ],
 									"text" : "play~ section"
 								}
 
@@ -240,7 +382,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 52.5, 335.0, 30.0, 30.0 ]
+									"patching_rect" : [ 52.5, 382.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -268,7 +410,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-124", 0 ],
+									"destination" : [ "obj-6", 0 ],
 									"source" : [ "obj-37", 0 ]
 								}
 
@@ -276,7 +418,21 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-37", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-54", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-124", 0 ],
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -341,7 +497,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -629,7 +785,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 535.0, 505.0, 29.5, 22.0 ],
+					"patching_rect" : [ 535.0, 474.0, 29.5, 22.0 ],
 					"text" : "+"
 				}
 
@@ -713,8 +869,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 678.5, 254.0, 150.0, 20.0 ],
-					"text" : "start at.... "
+					"patching_rect" : [ 632.5, 555.0, 150.0, 20.0 ],
+					"text" : "start gesture at this beat "
 				}
 
 			}
@@ -727,21 +883,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1009.0, 666.0, 150.0, 33.0 ],
 					"text" : "at this measure this gesture plays. "
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-10",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 535.0, 670.5, 151.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 754.0, 1225.0, 160.0, 22.0 ],
-					"text" : "udpsend 192.168.2.7 1001"
 				}
 
 			}
@@ -844,29 +985,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 902.5, 670.5, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 902.5, 709.5, 102.0, 22.0 ],
-					"text" : "rjs_3directionbow"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -878,6 +996,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-120", 0 ]
@@ -900,15 +1025,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
+					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-123", 3 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-123", 5 ]
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-123", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
@@ -962,6 +1094,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-139", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -1040,8 +1179,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-4", 0 ]
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -1061,6 +1200,20 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-131" : [ "live.gain~", "live.gain~", 0 ],
@@ -1071,9 +1224,23 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "rjs_headcontroller.maxpat",
+				"bootpath" : "~/Documents/shimon-gestures-with-mouth/examples",
+				"patcherrelativepath" : "../../shimon-gestures-with-mouth/examples",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "rjs_3directionbow.maxpat",
-				"bootpath" : "~/Dropbox (GaTech)/Shimon Working/shimon-gestures/gestures",
-				"patcherrelativepath" : "../gestures",
+				"bootpath" : "~/Documents/shimon-gestures-with-mouth/gestures",
+				"patcherrelativepath" : "../../shimon-gestures-with-mouth/gestures",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rjs_evil.maxpat",
+				"bootpath" : "~/Documents/shimon-gestures-with-mouth/gestures",
+				"patcherrelativepath" : "../../shimon-gestures-with-mouth/gestures",
 				"type" : "JSON",
 				"implicit" : 1
 			}
