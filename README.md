@@ -2,22 +2,22 @@
 
 ### Instructions for Use 
 
-1. Open Songs/intoyourmind.maxpat in Max. Besides the patch, you should also see a simulator window of a tiny Shimon! 
+1. Open Songs/intoyourmind.maxpat in Max. Besides the patch, you should also see a simulator window of a tiny Shimon! If you don't, the next step should fix this. 
 
-2. Make sure the directory is added to MaxMSP File Preferences
+2. Make sure the directory is added to MaxMSP File Preferences, and reopen the patch
  	- Options > File Preferences
 
 3. There is a comment that says "VIPs edit here and below" - this is the only part of this patch you should edit. 
 
 4. The sel object specifies beats of the song where gestures start
-You can make your own gesture and attach it to one of the #sel outputs to have it triggered at that measure. 
+You can make your own gesture and attach it to one of the **sel** outputs to have it triggered at that measure. 
 
 5. A very basic gesture example is to the left of **sel**. Click the button with a circle (called a **bang**) to see what it does on the Shimon simulator.
 
 6. Some more complicated examples of gestures are attached to sel already, like **rjs.3directionbow**. You can double click them to see how they work. 
 
 7. To create your own gesture in a nice box like this (a subpatch), you can create a new object with n and then call it **p myNewGesture** (the p is necessary, but you can name it anything)
-	- It will need one inlet for an incoming #bang - create this by typing n for a new object and then call it **inlet**. It will transform into a 1 and a down-arrow. 
+	- It will need one inlet for an incoming **bang** - create this by typing n for a new object and then call it **inlet**. It will transform into a 1 and a down-arrow. 
 	- You can save your subpatch so you can share it with the group! Save it starting with your initials. 
 
 8. You have access to the following gesture commands:
